@@ -18,15 +18,19 @@ module.exports = {
       rules: [
         {
           // 拡張子 .ts もしくは .tsx の場合
-          test: /\.tsx?$/,
+          test: /\.tsx?$/, 
           // TypeScript をコンパイルする
           use: "ts-loader"
-        }
+        },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
       ]
     },
     // import 文で .ts や .tsx ファイルを解決するため
     resolve: {
-      extensions: [".ts", ".tsx", ".js", ".json"]
+      extensions: [".ts", ".tsx", ".js", ".json", ".css"]
     },
     // ES5(IE11等)向けの指定（webpack 5以上で必要）
     target: ["web", "es5"],

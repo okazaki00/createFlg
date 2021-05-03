@@ -1,15 +1,16 @@
 import * as React from 'react';
-import { Header } from './Header/header';
 import Home  from './Home/home'
 
 import { GlobalStyle } from '../global';
+import { LayoutTop } from './LayoutTop/layoutTop';
+import { Header } from './Header/header';
 
 function App() {
 
     return (
         <div>
           <GlobalStyle />
-          <Header title="売上フラッグ作成メーカー"/>
+          <LayoutTop>{Header}</LayoutTop>
           <Home play={false} />
         </div>
     );

@@ -10,7 +10,6 @@ const StyledHome = styled.div`
     line-height: 2em;
     font-family: 'New Tegomin', serif;
     margin: 2em;
-
     .strong {
         color: ${colors.hotpink};
     }

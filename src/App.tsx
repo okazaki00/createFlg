@@ -4,7 +4,9 @@ import Router from './Router';
 
 interface Props {}
 const App = ({  }: Props) => {
-  return <Router />;
+  return (
+  <Router />
+  );
 };
 
 export default App;
